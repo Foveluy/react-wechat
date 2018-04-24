@@ -1,0 +1,7 @@
+<view bindtap="onTaps" style="background:black; width:123px; ">
+  <view>
+    <view for="{{foo}}" for-item="item" for-index="index">
+      <view for="{{c}}" for-item="i" for-index="idx">1</view>
+    </view>
+  </view>
+</view>

@@ -1,3 +1,5 @@
 export class Page {
-  render() {}
+    window = {}
+
+    render() {}
 }
