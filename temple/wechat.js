@@ -4,6 +4,10 @@ export class Page {
     render() {}
 }
 
-export class App{
-  
+export class App {
+    onLaunch() {}
+    onShow() {}
+    onHide() {}
+    onError() {}
+    onPageNotFound() {}
 }

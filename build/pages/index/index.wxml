@@ -1,7 +1,12 @@
-<view bindtap="onTaps" style="background:black; width:123px; ">
+<template name="Second">
   <view>
-    <view for="{{foo}}" for-item="item" for-index="index">
-      <view for="{{c}}" for-item="i" for-index="idx">1</view>
-    </view>
+    <view> {{fuck}} </view>
+    <view> 无状态组件 </view>
   </view>
+</template>
+<view class="container" bindtap="onTaps">
+  <view>你好 react-wechat</view>
+  <button>+1</button>
+  <view>{{foo}}</view>
+  <template is="Second" />
 </view>

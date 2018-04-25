@@ -1,8 +1,7 @@
-import { first } from './index-temple';
 const i = 'shit';
 Page({
   data: {
-    foo: [1, 3, 4, 5]
+    foo: 1
   },
   check: function () {
     const a = i + 'hahah';
@@ -12,7 +11,7 @@ Page({
   },
   onTaps: function () {
     this.setData({
-      foo: '213'
+      foo: this.data.foo + 1
     });
   }
 })
