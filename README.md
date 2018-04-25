@@ -1,6 +1,19 @@
 # react-wechat
 
-如果想要使用 React 进行开发一切，抹平平台差异，那么必须要实现虚拟 DOM。
+使用 React 进行书写小程序，尽最大努力贴近 React 语法
+
+# TODOLIST
+
+- [x] 页面
+- [x] App
+- [ ] 组件化
+   - [ ] component
+   - [x] 无状态组件
+   - [x] 组件通信
+- [ ] 状态管理
+- [ ] ui库 
+
+
 
 # LICENSE
 
