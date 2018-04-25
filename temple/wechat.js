@@ -3,3 +3,7 @@ export class Page {
 
     render() {}
 }
+
+export class App{
+  
+}

@@ -1,3 +1,4 @@
+import { first } from './index-temple';
 const i = 'shit';
 Page({
   data: {
