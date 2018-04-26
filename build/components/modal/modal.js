@@ -9,5 +9,6 @@ Component({
   },
   data: {
     foo: 'bar'
-  }
+  },
+  properties: {}
 })

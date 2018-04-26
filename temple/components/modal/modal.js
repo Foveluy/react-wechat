@@ -4,6 +4,9 @@ export default class Foo extends Component {
   state = {
     foo: 'bar'
   }
+  props = {
+      
+  }
 
   fucking() {
     this.setState({

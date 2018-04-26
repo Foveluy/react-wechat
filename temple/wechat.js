@@ -13,6 +13,9 @@ export class App {
 }
 
 export class Component {
+  props = {}
+  state = {}
+
   render() {}
 }
 
