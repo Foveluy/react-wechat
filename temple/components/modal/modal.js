@@ -7,12 +7,14 @@ export default class Foo extends Component {
   props = {
     propsFoo: String
   }
+  
 
   fucking(e) {
     this.setState({
       foo: 'bar Clicked'
     })
   }
+
   render() {
     return (
       <view bindTap={this.fucking}>

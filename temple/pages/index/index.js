@@ -1,5 +1,6 @@
 import { Page } from '../../wechat'
 import Modal from '../../components/modal/modal'
+import First from './outside'
 
 const i = 'shit'
 
@@ -7,7 +8,7 @@ function Second() {
   return (
     <view>
       <view> {foo} </view>
-      <view> 无状态组件 </view>
+      <view> second无状态组件 </view>
     </view>
   )
 }
@@ -38,6 +39,7 @@ export default class Index extends Page {
         <view>{foo}</view>
         <Modal propsFoo={foo} />
         <Second data="{{foo,bar}}" />
+        <First />
       </view>
     )
   }

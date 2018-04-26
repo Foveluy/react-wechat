@@ -1,13 +1,15 @@
 <template name="Second">
   <view>
     <view> {{foo}} </view>
-    <view> 无状态组件 </view>
+    <view> second无状态组件 </view>
   </view>
 </template>
+<import src="./outside.wxml" />
 <view class="container">
   <view>你好 react-wechat</view>
   <button bindtap="onTaps">+1</button>
   <view>{{foo}}</view>
   <Modal propsFoo="{{foo}}" />
   <template is="Second" data="{{foo,bar}}" />
+  <template is="First" />
 </view>
