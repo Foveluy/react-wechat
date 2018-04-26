@@ -1,6 +1,6 @@
 <template name="Second">
   <view>
-    <view> {{fuck}} </view>
+    <view> {{foo}} </view>
     <view> 无状态组件 </view>
   </view>
 </template>
@@ -9,5 +9,5 @@
   <button>+1</button>
   <view>{{foo}}</view>
   <Modal />
-  <template is="Second" />
+  <template is="Second" data="{{foo,bar}}" />
 </view>

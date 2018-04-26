@@ -6,7 +6,7 @@ const i = 'shit'
 function Second() {
   return (
     <view>
-      <view> {fuck} </view>
+      <view> {foo} </view>
       <view> 无状态组件 </view>
     </view>
   )
@@ -37,7 +37,7 @@ export default class Index extends Page {
         <button>+1</button>
         <view>{foo}</view>
         <Modal />
-        <Second />
+        <Second data="{{foo,bar}}" />
       </view>
     )
   }
