@@ -1,2 +1,0 @@
-<!--components/foo/foo.wxml-->
-<text>我是自定义foo组件{{bar}}</text>

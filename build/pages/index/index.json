@@ -1,3 +1,6 @@
 {
-    "navigationBarTitleText": "react-wechat"
+    "navigationBarTitleText": "react-wechat",
+    "usingComponents": {
+        "Modal": "../../components/modal/modal"
+    }
 }

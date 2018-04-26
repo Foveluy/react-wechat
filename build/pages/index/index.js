@@ -1,18 +1,7 @@
 const i = 'shit';
-const store = getApp().globalData.store
-
 Page({
   data: {
     foo: 1
-  },
-  onLoad() {
-    console.log(this)
-    store.subscribe((state) => {
-      console.log(state)
-      this.setData({ ...state })
-    })
-  },
-  onShow() {
   },
   check: function () {
     const a = i + 'hahah';
@@ -21,6 +10,8 @@ Page({
     });
   },
   onTaps: function () {
-    store.dispatch({ type: 'add' })
+    this.setData({
+      foo: this.data.foo + 1
+    });
   }
 })
