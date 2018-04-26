@@ -19,6 +19,7 @@ export default class Foo extends Component {
         <view>{foo}</view>
         <view>I am Component</view>
         <view>{propsFoo}</view>
+        {children}
       </view>
     )
   }

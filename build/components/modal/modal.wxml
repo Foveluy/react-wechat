@@ -2,4 +2,5 @@
   <view>{{foo}}</view>
   <view>I am Component</view>
   <view>{{propsFoo}}</view>
+  <slot />
 </view>
