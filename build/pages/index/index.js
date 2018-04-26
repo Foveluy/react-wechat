@@ -1,3 +1,6 @@
+
+// import { createStore } from 'redux';
+const { createStore } = require('../../nodeModules/redux/es/redux.js')
 const i = 'shit';
 Page({
   data: {

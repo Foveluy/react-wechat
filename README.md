@@ -11,7 +11,7 @@
       - [x] 组件children
       - [ ] 抽象组件
       - [ ] 组件关系
-      - [ ] behaviors
+      - [x] behaviors
    - [x] 无状态组件
       - [x] 通过外部引入无状态组件
       - [x] 页面内组件引入无状态组件
@@ -21,7 +21,7 @@
    - [ ] redux
    - [ ] redux-saga
    - [ ] redux-thunk (不一定支持)
-- [ ] npm包支持
+- [ ] npm包支持(80%)
 - [ ] ui库 
 - [ ] 单元测试
 - [ ] typing 支持
