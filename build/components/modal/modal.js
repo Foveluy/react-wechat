@@ -1,7 +1,7 @@
 
 Component({
   methods: {
-    fucking: function () {
+    fucking: function (e) {
       this.setData({
         foo: 'bar Clicked'
       });

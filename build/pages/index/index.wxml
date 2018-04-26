@@ -4,10 +4,10 @@
     <view> 无状态组件 </view>
   </view>
 </template>
-<view class="container" bindtap="onTaps">
+<view class="container">
   <view>你好 react-wechat</view>
-  <button>+1</button>
+  <button bindtap="onTaps">+1</button>
   <view>{{foo}}</view>
-  <Modal propsFoo="hahahha" />
+  <Modal propsFoo="{{foo}}" />
   <template is="Second" data="{{foo,bar}}" />
 </view>

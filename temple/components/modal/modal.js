@@ -8,7 +8,7 @@ export default class Foo extends Component {
     propsFoo: String
   }
 
-  fucking() {
+  fucking(e) {
     this.setState({
       foo: 'bar Clicked'
     })

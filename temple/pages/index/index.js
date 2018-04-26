@@ -32,11 +32,11 @@ export default class Index extends Page {
   render() {
     const { foo } = this.state
     return (
-      <view class="container" bindTap={this.onTaps}>
+      <view class="container">
         <view>你好 react-wechat</view>
-        <button>+1</button>
+        <button bindTap={this.onTaps}>+1</button>
         <view>{foo}</view>
-        <Modal propsFoo="hahahha" />
+        <Modal propsFoo={foo} />
         <Second data="{{foo,bar}}" />
       </view>
     )
