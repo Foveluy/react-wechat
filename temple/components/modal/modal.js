@@ -5,7 +5,7 @@ export default class Foo extends Component {
     foo: 'bar'
   }
   props = {
-      
+    propsFoo: String
   }
 
   fucking() {
@@ -18,6 +18,7 @@ export default class Foo extends Component {
       <view bindTap={this.fucking}>
         <view>{foo}</view>
         <view>I am Component</view>
+        <view>{propsFoo}</view>
       </view>
     )
   }

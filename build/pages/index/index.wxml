@@ -8,6 +8,6 @@
   <view>你好 react-wechat</view>
   <button>+1</button>
   <view>{{foo}}</view>
-  <Modal />
+  <Modal propsFoo="hahahha" />
   <template is="Second" data="{{foo,bar}}" />
 </view>

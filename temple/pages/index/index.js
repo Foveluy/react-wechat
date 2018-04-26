@@ -36,7 +36,7 @@ export default class Index extends Page {
         <view>你好 react-wechat</view>
         <button>+1</button>
         <view>{foo}</view>
-        <Modal />
+        <Modal propsFoo="hahahha" />
         <Second data="{{foo,bar}}" />
       </view>
     )

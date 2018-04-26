@@ -10,5 +10,7 @@ Component({
   data: {
     foo: 'bar'
   },
-  properties: {}
+  properties: {
+    propsFoo: String
+  }
 })
