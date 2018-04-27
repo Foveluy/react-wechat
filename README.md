@@ -51,9 +51,9 @@
 - [ ] 单元测试
 - [ ] typing 支持
 - [ ] 工具 watch (增量编译)
-- [ ] 输出 cjs
+- [x] 输出 cjs(实际上不用了，小程序现在支持import)
 - [x] CI/CD
-- [ ] COV
+- [x] COV
 
 
 
