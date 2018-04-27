@@ -16,7 +16,7 @@ class Demo extends Page {
         return (
             <view>
                 <First data="{{foo}}" />
-                <First data="{{bar:'我是bar'}}" >
+                <First data="{{bar:'我是bar'}}" />
             </view>
         )
     }
