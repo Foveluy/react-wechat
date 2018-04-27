@@ -48,6 +48,8 @@
 - [ ] typing 支持
 - [ ] 工具 watch (增量编译)
 - [ ] 输出 cjs
+- [x] CI/CD
+- [ ] COV
 
 
 

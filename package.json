@@ -1,35 +1,41 @@
 {
-    "name": "react-wechat",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo test",
-        "pack": "node ./lib/pack && node ./build/bundle.js",
-        "b": "node ./lib/pack",
-        "dev": "./node_modules/nodemon/bin/nodemon.js",
-        "tree": "tree -I '*svn|*node_module*|example|dist|app'"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
-        "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.46",
-        "@babel/preset-react": "^7.0.0-beta.46",
-        "chalk": "^2.4.0",
-        "fs-extra": "^5.0.0",
-        "nodemon": "^1.17.3",
-        "prettify-xml": "^1.2.0",
-        "redux": "^4.0.0",
-        "rollup": "^0.58.1",
-        "rollup-plugin-less": "^0.1.4",
-        "rollup-plugin-node-resolve": "^3.3.0"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.0.0-beta.46",
-        "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
-        "rollup-plugin-babel": "^4.0.0-beta.4",
-        "rollup-plugin-json": "^2.3.0"
-    }
+  "name": "react-wechat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "pack": "node ./lib/pack && node ./build/bundle.js",
+    "b": "node ./lib/pack",
+    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "tree": "tree -I '*svn|*node_module*|example|dist|app'",
+    "cov": "istanbul cover _mocha",
+    "ci": "npm run cov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.46",
+    "chalk": "^2.4.0",
+    "coveralls": "^3.0.0",
+    "fs-extra": "^5.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3",
+    "power-assert": "^1.5.0",
+    "prettify-xml": "^1.2.0",
+    "redux": "^4.0.0",
+    "rollup": "^0.58.1",
+    "rollup-plugin-less": "^0.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-json": "^2.3.0"
+  }
 }
