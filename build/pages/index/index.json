@@ -1,6 +1,5 @@
 {
-    "navigationBarTitleText": "react-wechat",
-    "usingComponents": {
-        "Modal": "../../components/modal/modal"
-    }
+    "navigationBarTitleText": "React Wechat",
+    "navigationBarBackgroundColor": "#282c34",
+    "navigationBarTextStyle": "white"
 }
