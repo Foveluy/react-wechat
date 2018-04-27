@@ -1,7 +1,6 @@
 ![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page.png)
 
 # React-Wechat
-# egg-blueprint
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
