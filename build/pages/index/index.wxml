@@ -6,7 +6,7 @@
 </template>
 <import src="./outside.wxml" />
 <view class="container">
-  <view>你好 react-wechat</view>
+  <view>你好 react-wechat{{props.s}}</view>
   <button bindtap="onTaps">+1</button>
   <view>{{foo}}</view>
   <Modal propsFoo="{{foo}}" />

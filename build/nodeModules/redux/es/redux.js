@@ -6,7 +6,7 @@ exports.applyMiddleware = applyMiddleware;
 exports.compose = compose;
 exports.__DO_NOT_USE__ActionTypes = void 0;
 
-var _symbolObservable = require("symbol-observable");
+var _index = require("../../symbol-observable/es/index.js");
 
 /**
  * These are private action types reserved by Redux.
@@ -295,7 +295,7 @@ function createStore(reducer, preloadedState, enhancer) {
           unsubscribe: unsubscribe
         };
       }
-    }, _ref[_symbolObservable.default] = function () {
+    }, _ref[_index.default] = function () {
       return this;
     }, _ref;
   } // When a store is created, an "INIT" action is dispatched so that every
@@ -311,7 +311,7 @@ function createStore(reducer, preloadedState, enhancer) {
     subscribe: subscribe,
     getState: getState,
     replaceReducer: replaceReducer
-  }, _ref2[_symbolObservable.default] = observable, _ref2;
+  }, _ref2[_index.default] = observable, _ref2;
 }
 /**
  * Prints a warning in the console if it exists.
@@ -414,7 +414,7 @@ function combineReducers(reducers) {
   for (var i = 0; i < reducerKeys.length; i++) {
     var key = reducerKeys[i];
 
-    if (process.env.NODE_ENV !== 'production') {
+    if (global !== 'production') {
       if (typeof reducers[key] === 'undefined') {
         warning('No reducer provided for key "' + key + '"');
       }
@@ -428,7 +428,7 @@ function combineReducers(reducers) {
   var finalReducerKeys = Object.keys(finalReducers);
   var unexpectedKeyCache = void 0;
 
-  if (process.env.NODE_ENV !== 'production') {
+  if (global !== 'production') {
     unexpectedKeyCache = {};
   }
 
@@ -448,7 +448,7 @@ function combineReducers(reducers) {
       throw shapeAssertionError;
     }
 
-    if (process.env.NODE_ENV !== 'production') {
+    if (global !== 'production') {
       var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
 
       if (warningMessage) {
@@ -621,6 +621,6 @@ function applyMiddleware() {
 
 function isCrushed() {}
 
-if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+if (global !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
   warning("You are currently using minified code outside of NODE_ENV === 'production'. " + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
 }

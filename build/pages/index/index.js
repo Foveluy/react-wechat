@@ -1,11 +1,10 @@
 
-// import { createStore } from 'redux';
-const { createStore } = require('../../nodeModules/redux/es/redux.js')
 const i = 'shit';
-Page({
+const react_wechat_obj = {
   data: {
     foo: 1
   },
+  onLoad: function () {},
   check: function () {
     const a = i + 'hahah';
     this.setData({
@@ -17,4 +16,9 @@ Page({
       foo: this.data.foo + 1
     });
   }
-})
+}
+const onLoad = react_wechat_obj.onLoad
+react_wechat_obj.onLoad = function(args){
+    onLoad.call(this,args)
+}
+Page(react_wechat_obj)
