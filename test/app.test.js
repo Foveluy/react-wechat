@@ -2,6 +2,7 @@ const { transform } = require('../lib/convert')
 const assert = require('power-assert')
 const fs = require('fs-extra')
 const path = require('path')
+const logger = require('../lib/logger')
 
 const p = () => {
   return new Promise((resolve, reject) => {
@@ -48,6 +49,13 @@ describe('App.js.test', function() {
     assert.equal(/const onLoad = react_wechat_obj.onLoad/.test(output.js), true)
     done()
     // console.log(output.js)
+  })
+  it('测试 logger 方法',(done)=>{
+    // assert.equal(/const onLoad = react_wechat_obj.onLoad/.test(output.js), true)
+    logger.warn('警告')
+    logger.error('错误')
+    logger.greate('正常')
+    done()
   })
 
 
