@@ -1,25 +1,36 @@
+page {
+    background: #282c34;
+}
+
 .container {
     text-align: center;
     margin-top: 30px;
 }
 
 .title {
-    color: #61dafb;
+    color: #1890ff;
     font-size: 22px;
 }
-.sub-title{
+
+.sub-title {
     margin-top: 25px;
+    margin-bottom: 25px;
     color: white;
     font-size: 16px;
-    font-weight:200;
-}
-
-page {
-    background: #282c34;
+    font-weight: 200;
 }
 
 .logo {
     animation: spin 5000ms infinite linear;
+}
+
+.rw-button {
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 10px;
+    background: #1890ff;
+    color: white;
+    font-weight: 200;
 }
 
 @keyframes spin {

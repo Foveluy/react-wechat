@@ -1,9 +1,5 @@
 
-const react_wechat_obj = {
-  onLoad: function () {
-    wx.navigate;
-  }
-}
+const react_wechat_obj = {}
 const onLoad = react_wechat_obj.onLoad
 react_wechat_obj.onLoad = function(args){
     if(onLoad !== void 666)

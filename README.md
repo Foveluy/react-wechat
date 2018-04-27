@@ -1,4 +1,4 @@
-![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page_2.png)
+![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page_1.png)
 
 # React-Wechat
 [![NPM version][npm-image]][npm-url]
@@ -41,6 +41,8 @@
       - [x] 通过外部引入无状态组件
       - [x] 页面内组件引入无状态组件
       - [ ] wxs支持
+      - [ ] 页面内箭头函数无状态组件
+      - [ ] 无状态组件的属性设置问题
    - [ ] 组件间通信
 - [x] 状态管理
    - [x] redux
@@ -50,10 +52,11 @@
 - [ ] ui库 
 - [ ] 单元测试
 - [ ] typing 支持
-- [ ] 工具 watch (增量编译)
+- [x] 工具 watch (增量编译)
 - [x] 输出 cjs(实际上不用了，小程序现在支持import)
 - [x] CI/CD
 - [x] COV
+- [ ] 拷贝资源目录
 
 
 
