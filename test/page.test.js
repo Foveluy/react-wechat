@@ -27,7 +27,6 @@ describe('Page.js.test wxml', function() {
     const r = new RegExp('<view> {{foo}} </view>')
     assert.equal(r.test(output.wxml), true)
 
-    console.log(output.wxml)
     done()
   })
 
@@ -54,4 +53,19 @@ describe('Page.js.test wxml', function() {
     done()
   })
 
+  it('连续相加字符串能够成功 width:{{foo+1-3-4+2+foo}}px;', done => {
+    assert.equal(/{{foo\+1-3-4\+2\+foo}}px/.test(output.wxml), true)
+    done()
+  })
+
+  it('字符串中{{}} background:rgba({{bar}},3,3,1);', done => {
+    console.log(output.wxml)
+    assert.equal(/background:rgba\({{bar}},3,3,1\);/.test(output.wxml), true)
+    done()
+  })
+
+  it('字符串中 做加法 rgba({{foo+100}},3,3,1)', done => {
+    assert.equal(/rgba\({{foo\+100}},3,3,1\)/.test(output.wxml), true)
+    done()
+  })
 })

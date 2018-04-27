@@ -33,7 +33,9 @@ export default class Index extends Page {
     const { foo } = this.state
     return (
       <view class="container">
-        <view>你好 react-wechat</view>
+        <view style={{ height: `${foo}px`, width: `${foo + 1 - 3 - 4 + 2 + foo}px` }}>你好 react-wechat</view>
+        <view style={{ height: `${bar}px`, background: `rgba(${bar},3,3,1)` }}>你好 react-wechat</view>
+        <view style={{ height: '300px', background: `rgba(${foo + 100},3,3,1)` }} />
         <First />
         <Second />
       </view>

@@ -1,19 +1,12 @@
-
 const i = 'shit';
 const react_wechat_obj = {
   data: {
-    foo: 1
+    foo: 100
   },
   onLoad: function () {},
-  check: function () {
-    const a = i + 'hahah';
-    this.setData({
-      foo: '213'
-    });
-  },
   onTaps: function () {
     this.setData({
-      foo: this.data.foo + 1
+      foo: this.data.foo + 10
     });
   }
 }

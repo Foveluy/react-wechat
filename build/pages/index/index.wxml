@@ -4,12 +4,6 @@
     <view> second无状态组件 </view>
   </view>
 </template>
-<import src="./outside.wxml" />
-<view class="container">
-  <view>你好 react-wechat{{props.s}}</view>
-  <button bindtap="onTaps">+1</button>
-  <view>{{foo}}</view>
-  <Modal propsFoo="{{foo}}" />
-  <template is="Second" data="{{foo,bar}}" />
-  <template is="First" />
+<view class="container" bindtap="onTaps" style="height:200px; background:rgba({{foo+20}},3,{{foo+20}},1); ">
+  <image class="logo" src="../../res/reaction.svg" />
 </view>

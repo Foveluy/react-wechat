@@ -28,6 +28,7 @@
 - [x] 页面
 - [x] App
 - [ ] 组件化
+   - [ ] tag属性的支持
    - [x] component
       - [x] 组件children
       - [ ] 抽象组件

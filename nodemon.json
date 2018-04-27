@@ -3,5 +3,5 @@
     "watch": ["lib", "temple/*/**", "temple"],
     "verbose": true,
     "exec": "node ./lib/pack",
-    "ext": "js json"
+    "ext": "js json css"
 }
