@@ -1,4 +1,5 @@
 import Index from './pages/index/index'
+import Demo from './pages/demo/demo'
 import { App } from './wechat'
 import { createStore } from 'redux'
 

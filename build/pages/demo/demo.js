@@ -1,8 +1,6 @@
 
 const react_wechat_obj = {
-  onLoad: function () {
-    wx.navigate;
-  }
+  onLoad: function () {}
 }
 const onLoad = react_wechat_obj.onLoad
 react_wechat_obj.onLoad = function(args){

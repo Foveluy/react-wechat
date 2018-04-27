@@ -1,14 +1,13 @@
 import { Page } from '../../wechat'
 
-export default class Index extends Page {
+export default class Demo extends Page {
   window = {
     navigationBarTitleText: 'React Wechat',
     navigationBarBackgroundColor: '#282c34',
     navigationBarTextStyle: 'white'
   }
 
-  onLoad(){
-    wx.navigate
+  onLoad() {
   }
 
   render() {
