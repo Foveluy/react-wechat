@@ -1,4 +1,4 @@
-![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page.png)
+![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page_2.png)
 
 # React-Wechat
 [![NPM version][npm-image]][npm-url]
