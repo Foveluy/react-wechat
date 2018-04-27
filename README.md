@@ -1,4 +1,6 @@
-# react-wechat
+![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page.png)
+
+# React-Wechat
 # egg-blueprint
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -20,7 +22,7 @@
 [download-image]: https://img.shields.io/npm/dm/react-wechat.svg?style=flat-square
 [download-url]: https://npmjs.org/package/react-wechat
 
-![](https://github.com/215566435/react-wechat/blob/master/docs/demo_page.png)
+
 
 
 使用 React 进行书写小程序，尽最大努力贴近 React 语法
