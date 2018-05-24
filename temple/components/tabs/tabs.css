@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+}
+
+.rw-design-swiper-item {
+    background: brown;
+}
+
+.rw-design-swiper-container {
+    display: flex;
+}

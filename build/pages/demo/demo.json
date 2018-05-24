@@ -1,5 +1,8 @@
 {
     "navigationBarTitleText": "React Wechat",
     "navigationBarBackgroundColor": "#282c34",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "Tabs": "../../components/tabs/tabs"
+    }
 }

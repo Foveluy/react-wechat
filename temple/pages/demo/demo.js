@@ -1,22 +1,24 @@
 import { Page } from '../../wechat'
+import Tabs from '../../components/tabs/tabs'
 
 export default class Demo extends Page {
-  window = {
-    navigationBarTitleText: 'React Wechat',
-    navigationBarBackgroundColor: '#282c34',
-    navigationBarTextStyle: 'white'
-  }
+    window = {
+        navigationBarTitleText: 'React Wechat',
+        navigationBarBackgroundColor: '#282c34',
+        navigationBarTextStyle: 'white'
+    }
 
-  onLoad() {
-  }
+    onLoad() {}
 
-  render() {
-    return (
-      <view class="container">
-        <image class="logo" src="../../res/reaction.svg" />
-        <view class="title">你好，React 小程序</view>
-        <view class="sub-title">使用 React 写法书写小程序</view>
-      </view>
-    )
-  }
+    onSwiperChange(e) {
+        console.log(e.detail.current, e.detail.source)
+    }
+
+    render() {
+        return (
+            <view class="container">
+                <Tabs bindswiperchange={this.onSwiperChange} source={[1, 2, 3, 4]} />
+            </view>
+        )
+    }
 }

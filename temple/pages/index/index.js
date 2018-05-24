@@ -1,4 +1,4 @@
-import { Page } from 'wechat'
+import { Page } from '../../wechat'
 
 function Button({ title }) {
     return (
@@ -19,7 +19,7 @@ export default class Index extends Page {
                 <image class="logo" src="../../res/reaction.svg" />
                 <view class="title">你好，React 小程序</view>
                 <view class="sub-title">使用 React 写法书写小程序</view>
-                <Button title="快速开始" />
+                <Button data="{{title:'快速开始'}}" />
             </view>
         )
     }

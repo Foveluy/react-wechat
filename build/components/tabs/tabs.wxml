@@ -1,0 +1,16 @@
+<view>
+  <view class="rw-design-swiper-container">
+    <view wx:for="{{source}}" wx:for-item="item" wx:for-index="i" wx:key="{{i}}">{{i}}</view>
+  </view>
+  <swiper bindchange="onSwiperChange">
+    <swiper-item>
+      <view class="rw-design-swiper-item">213</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="rw-design-swiper-item">213</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="rw-design-swiper-item">213</view>
+    </swiper-item>
+  </swiper>
+</view>
