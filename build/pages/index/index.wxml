@@ -7,5 +7,5 @@
   <image class="logo" src="../../res/reaction.svg" />
   <view class="title">你好，React 小程序</view>
   <view class="sub-title">使用 React 写法书写小程序</view>
-  <template is="Button" data="{{title:'快速开始'}}" />
+  <template is="Button" data="{{title:'你好小程序'}}" />
 </view>
